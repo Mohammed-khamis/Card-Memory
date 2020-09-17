@@ -1,0 +1,168 @@
+body {
+     background-image: url("body_background.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     color: #fff;
+     font-family: 'Courier New', Courier, monospace;
+     margin: 0;
+     padding: 0;
+     height: 100%;
+}
+
+h1 {
+    background-color: rgba(125, 125, 125, 0.6);
+    font-size: 20px;
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+}
+
+.navigation {
+     display: inline-block;
+     border: 1px solid #ccc;
+     padding: 10px;
+     background-color: rgba(158, 83, 146, 0.6);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+}
+
+#todo {
+    background-color:rgba(158, 83, 146, 0.6);
+    width: 250px;
+    margin-left: 115px;
+    padding: 0;
+    word-wrap: break-word;
+}
+
+#in_progress {
+    background-color: rgba(158, 83, 146, 0.6);
+    width: 250px;
+    padding: 0;
+    word-wrap: break-word;
+}
+
+#done {
+    background-color:rgba(158, 83, 146, 0.6);
+    width: 250px;
+    margin-right: 105px;
+    word-wrap: break-word;
+}
+
+#add {
+    margin: 20px auto;
+    padding: 5px 10px;
+}
+
+#reset {
+    margin: 20px auto;
+    padding: 5px 10px;
+}
+
+#make {
+    margin: 20px auto;
+    padding: 5px 10px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(252, 252, 252);
+    padding: 0px;
+}
+
+li {
+    margin: 10px;
+}
+
+ul li button {
+    visibility: hidden;
+    display: inline;
+}
+
+ul li:hover button {
+    visibility: visible;
+}
+
+
+
+
+footer {
+    /* position: absolute;
+    bottom: 0px; */
+    background-color: rgba(110, 149, 180, 0.7);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
+
+fieldset {
+    margin: 10px;
+}
+legend {
+    border: 1px solid #ccc;
+    background-color: rgb(73, 69, 69);
+    color: white;
+    padding: 5px;
+}
+
+#name input, #email input {
+    padding: 5px;
+    margin-top: 5px;
+    width: 200px;
+}
+
+#name {
+    float: left;
+    margin: 10px;
+}
+
+
+#email {
+    clear: both;
+    float: left;
+    margin: 10px;
+}
+
+#gender {
+    clear: both;
+    float: left;
+    margin: 10px;
+}
+
+#comment {
+    clear: both;
+    float: left;
+    margin: 10px;
+}
+
+textarea {
+    height: 100px;
+    width: 400px;
+    margin: 10px 0;
+}
+
+button {
+    clear: both;
+    display: block;
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}

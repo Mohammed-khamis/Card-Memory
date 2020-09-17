@@ -7,7 +7,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div></div>
+    <header>
+        <h1>Mohammed Khmais Todo List</h1>
+        <nav>
+            <h4 class="navigation">To-Do</h4>
+            <h4 class="navigation">In-Progress</h4>
+            <h4 class="navigation">Done</h4>
+        </nav>
+    </header>
+    <main>
+        <div id="todo"></div>
+        <div id="in_progress"></div>
+        <div id="done"></div>
+    </main>
+    <button id="make" onclick="make()">make a List</button>
+    <button id="add" onclick="add()">Add To List</button>
+    <button id="reset" onclick="reset()">Reset</button> 
+    <footer>
+        <form action="" method="GET">
+            <fieldset>
+                <legend>Leave a message</legend>
+                    <span id="name">
+                        <label for="name">Your Name:</label>
+                        <br>
+                        <input type="text" name="name" placeholder="firstname lastname">
+                    </span>
+                    <span id="email">
+                        <label for="email">Your Email:</label>
+                        <br>
+                        <input type="email" name="email" placeholder="example@anything.com">
+                    </span>
+                    <span id="gender">
+                        <label for="gender">Gender:</label>
+                        <br>
+                        <input type="radio" value="male" name="gender">
+                        <label>Male</label>
+                        <input type="radio" value="female" name="gender">
+                        <label>Female</label>
+                    </span>
+                    <span id="comment">
+                        <label for="comment">Your Message:</label>
+                        <br>
+                        <textarea></textarea>
+                    </span>
+                    <button type="submit">Send Your Message</button>
+            </fieldset>
+        </form>
+        <p>All Copyright &copy; 2020 by Mohammed Khamis</p>
+    </footer>
     <script src="main.js"></script>    
 </body>
 </html> 
