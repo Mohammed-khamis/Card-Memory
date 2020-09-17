@@ -36,10 +36,10 @@ main {
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: space-between;
+    
 }
 
 #todo {
-    background-color:rgba(158, 83, 146, 0.6);
     width: 250px;
     margin-left: 115px;
     padding: 0;
@@ -47,14 +47,12 @@ main {
 }
 
 #in_progress {
-    background-color: rgba(158, 83, 146, 0.6);
     width: 250px;
     padding: 0;
     word-wrap: break-word;
 }
 
 #done {
-    background-color:rgba(158, 83, 146, 0.6);
     width: 250px;
     margin-right: 105px;
     word-wrap: break-word;
@@ -70,26 +68,26 @@ main {
     padding: 5px 10px;
 }
 
-#make {
-    margin: 20px auto;
-    padding: 5px 10px;
-}
 
 ul {
     list-style-type: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: rgb(252, 252, 252);
     padding: 0px;
 }
 
 li {
-    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: rgba(158, 83, 146, 0.6);
+    margin: 5px;
+    padding: 10px;
 }
 
 ul li button {
     visibility: hidden;
     display: inline;
+    padding: 2px;
 }
 
 ul li:hover button {
