@@ -8,16 +8,21 @@ body {
      margin: 0;
      padding: 0;
      height: 100%;
+     display: flexbox;
+     flex-wrap: wrap;
+
 }
 
 header {
     position: fixed;
     top: 0;
     width: 100%;
+    background-color: rgba(125, 125, 125, 0.6);
+    height: 120px;
 }
 
 h1 {
-    background-color: rgba(125, 125, 125, 0.6);
+    background-color: rgba(125, 125, 125, 0.8);
     font-size: 20px;
     width: 350px;
     padding: 10px;
@@ -26,18 +31,19 @@ h1 {
 }
 
 nav {
-    background-color: rgba(144, 211, 211, 0.6);
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: space-evenly;
+    z-index: 1;
 }
+
 
 .navigation {
      display: inline-block;
      border: 1px solid #ccc;
      padding-left: 30px;
      padding-top: 10px;
-     background-color: rgba(158, 83, 146, 0.7);
+     background-color: rgba(158, 83, 146, 0.8);
      width: 150px;
      height: 30px;
 }
@@ -70,7 +76,7 @@ main {
 }
 
 #add {
-    margin: 20px auto;
+    margin: 250px auto 10px;
     padding: 5px 10px;
 }
 
@@ -110,11 +116,36 @@ footer {
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
+    display: none;
+    position: sticky;
+    top: 100px;
 }
 
+#message + label {
+    background-color: rgba(220, 20, 60, 0.7);
+    padding: 10px 50px;
+    font-family: 'Times New Roman', Times, serif;
+    position: sticky;
+    top: 130px;
+    font-size: 20px;
+}
+
+#message {
+    padding: 0;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 140px;
+}
+
+#message:checked ~ footer {
+    display: block;
+}
+ 
 fieldset {
     margin: 10px;
 }
+
 legend {
     border: 1px solid #ccc;
     background-color: rgb(73, 69, 69);
