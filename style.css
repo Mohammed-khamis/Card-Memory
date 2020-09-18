@@ -112,7 +112,7 @@ ul li:hover button {
 }
 
 footer {
-    background-color: rgba(110, 149, 180, 0.7);
+    background-color: rgba(110, 149, 180);
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
@@ -140,6 +140,9 @@ footer {
 
 #message:checked ~ footer {
     display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
  
 fieldset {
