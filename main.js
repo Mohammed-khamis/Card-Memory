@@ -72,3 +72,9 @@ const reset = function () {
         }
     }
 };
+
+const footer = document.querySelector("footer");
+
+const close = function () {
+    footer.style.display = "none";
+}
